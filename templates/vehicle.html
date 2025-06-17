@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title> Add Your Vehicle </title>
+    <style>
+        body  {
+            font-size: 20px;
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        input {
+            font-size: 18px;
+            padding: 6px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2> ADD YOUR RECORD</h2>
+    <form method="POST" action="/add">
+        <text> year: </text>
+        <input type="number" name="year" placeholder="2025">
+        <text> make: </text>
+        <input type="text" name="make">
+        <text> model: </text>
+        <input type="text" name="model">
+        <text> color: </text>
+        <input type="text" name="color">
+        <text> mileage: </text>
+        <input type="number" name="mileage" placeholder="50000">
+        <text> miles </text>
+        <input type="submit", value="submit">
+    </form>
+</body>
+</html>
