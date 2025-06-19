@@ -16,7 +16,7 @@ class Vehicle:
 def home():
     return render_template("home.html")
 
-@app.route("/vehicle",methods=["POST"])
+@app.route("/addVehicle",methods=["POST"])
 def addVehicle():
     year = request.form['year']
     make = request.form['make']
