@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title> MY GARAGE </title>
+    <style>
+        body  {
+            font-size: 20px;
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        input {
+            font-size: 18px;
+            padding: 6px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<div id="vehicleInfo" style="display:none; margin-top: 10px;">
+  <strong>Vehicle 1</strong><br>
+  Make: {{make}}<br>
+  Model: {{model}}<br>
+  Year: {{year}}
+  color: {{color}}
+  Mileage: {{init_mileage}} miles
+</div>
+<button onclick="addVehicle()"> Add A Vechile </button>
+<script>
+    function addVehicle(){
+        window.location.href = "templates/vehicle.html";
+    } 
+
+</script>
+</html>
